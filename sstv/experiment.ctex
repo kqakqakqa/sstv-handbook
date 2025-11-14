@@ -264,12 +264,88 @@ luminance $Y$, $R-Y$, $B-Y$. And the next three signals contain
 even scan-line: luminance $Y$, $Y-R$, $Y-B$. The opposite
 \uv{polarity} of chrominance compensates for possible color
 distortion when signals are not tuned precisely. The HQ1 mode
-has 90 seconds for image transmission and HQ2 has 112 seconds.
+has 90 seconds for image transmission and HQ2 has 112 seconds,
+both use 256 vertical lines.
 
-Unfortunately, the author refused to disclose the exact specification
-of the system, so this improved system is not commonly found.
+I had once QSO on 20m with the station equipped also with the
+Superscan 2001 scan-converter and we were able to exchange a few
+pictures in HQ1 mode and the quality was outstanding.
 
-\placefigure[][none]{Two scan-lines of Martin HQ modes, when color
+In the early 2000s, Martin developed a new SSTV interface for
+IBM PCs called {\em ACE SSTV} and added two additional modes, HQ3 and
+HQ4. HQ3 has the same scan line timings and color information as
+HQ2 but with 72 scan lines (instead of 128), and HQ4 is
+identical to HQ1 but also 72 scan lines.  As each scan line
+produces two screen lines, the resolution of HQ3/4 is 144
+vertical lines.
+
+Unfortunately, the author refused to disclose the exact
+specification of the system, so this improved system is not
+commonly found. However, during the time of its introduction, an
+author of WinPixPro software (Don Rotier, K0HEO)
+reverse-engineered HQ1 and HQ2 modes. Christoph Nadig, HB9ZHK
+used WinPixPro signals to implement these modes into his
+iDigi SSTV software for MacOS and thanks to that we have now
+specifications of all four Martin HQ modes.
+
+Scan line is started by two sync pulses with a gap: 6.5\,ms
+1200\,Hz, then 4.75\,ms 2100\,Hz, then 6.5\,ms 1200\,Hz, then
+4\,ms 1800 Hz (total of 21.75 ms).
+
+Then the video signals are sent in 4:2:2. For HQ1, luminance
+$Y$ is sent for 170\,ms, followed by chrominance $Cr$ for
+85.75\,ms and $Cb$ for 85.75\,ms. This is followed by a gap of
+0.5\,ms 1500\,Hz, then the information of the second screen line
+is sent: luminance $Y$ for 170\,ms, followed by chrominance
+$\overline{Cr}$ (inverted $Cr$) for 85.75\,ms and
+$\overline{Cb}$ (inverted $Cb$) for 85.75\,ms, and another gap of 0.22\,ms
+1500\,Hz.
+
+HQ2 has the same composition of the scan-line, but the duration
+of luminance $Y$ is 212.5\,ms, and chrominance $Cr$ and $Cb$ are
+106.5\,ms each and back porch gaps are 0.429\,ms.
+
+\def\hqline{%
+    YCrCbY$\overline{\mathrm{Cr}}\overline{\mathrm{Cb}}$%
+} 
+
+\placetable[][none]{The Martin HQ parameters and scan-line timing.}{
+\bTABLE[offset=\dimexpr1mm+.5pt]\tfx
+\setupTABLE[column][each][align=center]
+\bTABLEhead
+    \bTR
+    \bTH[bottomframe=off] Mode\eTH
+    \bTH[bottomframe=off] Resolution\eTH
+    \bTH[bottomframe=off] Color\eTH
+    \bTH[bottomframe=off] Sync\eTH
+    \bTH[nc=3] Scan-line (ms)\eTH
+    \bTH[bottomframe=off] Speed\eTH
+    \eTR
+
+    \bTR
+    \bTH[topframe=off] name\eTH
+    \bTH[topframe=off] \eTH
+    \bTH[topframe=off] sequence \eTH
+    \bTH[topframe=off] pulse\eTH
+    \bTH Y\eTH
+    \bTH Cr/$\overline{\mathrm{Cr}}$\eTH
+    \bTH Cb/$\overline{\mathrm{Cb}}$\eTH
+    \bTH[topframe=off] (lpm)\eTH
+    \eTR
+\eTABLEhead
+
+\setupTABLE[column][3,4,5,6,7,8,9][align=center,alignmentcharacter={.},aligncharacter=yes]
+
+\bTABLEbody
+\bTR\bTD Martin HQ1 \eTD\bTD 320$\times$256 \eTD\bTD \hqline \eTD\bTD  21.75 \eTD\bTD 170   \eTD\bTD 85.75 \eTD\bTD  85.75  \eTD\bTD 170.09934 \eTD\eTR
+\bTR\bTD Martin HQ2 \eTD\bTD 320$\times$256 \eTD\bTD \hqline \eTD\bTD  21.75 \eTD\bTD 212.5 \eTD\bTD 106.5 \eTD\bTD 106.5   \eTD\bTD 137.35022 \eTD\eTR
+\bTR\bTD Martin HQ3 \eTD\bTD 320$\times$144 \eTD\bTD \hqline \eTD\bTD  21.75 \eTD\bTD 212.5 \eTD\bTD 106.5 \eTD\bTD 106.6   \eTD\bTD 137.35022 \eTD\eTR
+\bTR\bTD Martin HQ4 \eTD\bTD 320$\times$144 \eTD\bTD \hqline \eTD\bTD  21.75 \eTD\bTD 170   \eTD\bTD 85.75 \eTD\bTD  85.75  \eTD\bTD 170.09934 \eTD\eTR
+\eTABLEbody
+\eTABLE
+}
+
+\placefigure[][none]{Two screen-lines of Martin HQ2 mode, when color
 bars are sent.}
 {
     \externalfigure[sstv/obr/HQ2_bars-en.pdf][]

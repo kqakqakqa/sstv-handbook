@@ -15,7 +15,7 @@
 \usemodule[newmat]
 %\usemodule[nath]
 \setupbibtex[database=ostatni/literef]
- 
+
 %20120715 \setupoutput[pdftex] % dvips, acrobat
 \pdfvariable minorversion 4
 
@@ -74,17 +74,17 @@ right={\symbol[rightquote]}]
 \setupurl[style=type,color=darkred]
 
 % Vzhled obsahu ---------------------------------------------------------------
-\setupcombinedlist[content][level=1,alternative=b] 
+\setupcombinedlist[content][level=1,alternative=b]
 % a -- stranka hned za, b -- stranka na konci radku, 
 % c -- jako b, ale teckovany radek, d -- jako jeden odstavec
 \setuplist[chapter][width=10mm,style=bold]
 %\setuplist[section][width=10mm]
 %\setuplist[subsection][width=15mm]
 % pagestyle=normal for changing the appearance of pagenumber
-	
+
 % Odstavce ------------------------------------------------------------------
 % mezery mezi odstavci
-\setupwhitespace[none] 
+\setupwhitespace[none]
 
 % velikost odsazeni
 \setupindenting[small,next]  % none, small, medium, bix, next, first, [rozmer]
@@ -148,8 +148,8 @@ right={\symbol[rightquote]}]
 		}
 		}
 	\egroup
-	} 
-} 
+	}
+}
 
 \setuphead[chapter][%
 %	numbercommand=\Cislovani,
@@ -158,11 +158,12 @@ right={\symbol[rightquote]}]
 %	style={\bf\switchtobodyfont[24pt]},
 %	after={\nowhitespace\blank[2cm]},
 %	command=\MyChapterCommand,
+    page=no,
 	command=\MyChapter,
 	before=\bookinfo,
 	header=high,
 	numberstyle=\it,
-%	footer=none,
+	footer=none,
 %	after={\nowhitespace\hairline\blank[1cm]},
 ]
 
@@ -175,8 +176,8 @@ right={\symbol[rightquote]}]
 		}
 		}
 	\egroup
-	} 
-} 
+	}
+}
 
 \setuphead[title][
 	command=\MyTitle,
@@ -229,11 +230,11 @@ This chapter is part of the book {\em Image Communication on Short Waves}.
 %}
 
 \definedescription[descr][%
-  	headstyle=bold,
+	headstyle=bold,
 	style=normal,
 	align=flushleft,
 	location=hanging,
-  	width=broad,
+	width=broad,
 	margin=2em
 ]
 

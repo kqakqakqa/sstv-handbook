@@ -32,8 +32,10 @@
 	  \bTR	\bTD  M3	  \eTD\bTD  RGB	  \eTD\bTD  36	  \eTD\bTD  57	  \eTD\bTD  128	  \eTD\bTD  320	  \eTD\bTD  134.395  \eTD\eTR 
 	  \bTR	\bTD  M4	  \eTD\bTD  RGB	  \eTD\bTD  32	  \eTD\bTD  29	  \eTD\bTD  128	  \eTD\bTD  320	  \eTD\bTD  264.553  \eTD\eTR 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\bTR\bTD[nr=2]Martin HQ	  \eTD\bTD  HQ1	  \eTD\bTD  YCrCb	  \eTD\bTD  41	  \eTD\bTD  90	  \eTD\bTD  240	  \eTD\bTD  320	  \eTD\bTD  85.055  \eTD\eTR 
-	  \bTR	\bTD  HQ2	  \eTD\bTD  YCrCb	  \eTD\bTD  42	  \eTD\bTD  112	  \eTD\bTD  240	  \eTD\bTD  320	  \eTD\bTD  68.680  \eTD\eTR 
+\bTR\bTD[nr=4]Martin HQ	  \eTD\bTD  HQ1	  \eTD\bTD  YCrCb	  \eTD\bTD  41	  \eTD\bTD  90	 \eTD\bTD  256  \eTD\bTD  320	  \eTD\bTD  170.099  \eTD\eTR 
+	                      \bTR\bTD  HQ2	  \eTD\bTD  YCrCb	  \eTD\bTD  42	  \eTD\bTD  112	 \eTD\bTD  256  \eTD\bTD  320	  \eTD\bTD  137.350  \eTD\eTR 
+                          \bTR\bTD  HQ3	  \eTD\bTD  YCrCb	  \eTD\bTD   ?	  \eTD\bTD  63	 \eTD\bTD  144  \eTD\bTD  320	  \eTD\bTD  137.350  \eTD\eTR 
+	                      \bTR\bTD  HQ4	  \eTD\bTD  YCrCb	  \eTD\bTD   ?	  \eTD\bTD  51	 \eTD\bTD  144  \eTD\bTD  320	  \eTD\bTD  170.099  \eTD\eTR 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bTR\bTD[nr=19]MMSSTV	  \eTD\bTD  MC110-N	  \eTD\bTD  RGB	  \eTD\bTD  0x14$^{e}$	  \eTD\bTD  110	  \eTD\bTD  256	  \eTD\bTD  320	  \eTD\bTD  137.143  \eTD\eTR 
 	  \bTR	\bTD  MC140-N	  \eTD\bTD  RGB	  \eTD\bTD  0x15$^{e}$	  \eTD\bTD  140	  \eTD\bTD  256	  \eTD\bTD  320	  \eTD\bTD  109.389  \eTD\eTR 
