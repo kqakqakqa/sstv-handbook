@@ -307,7 +307,7 @@ of luminance $Y$ is 212.5\,ms, and chrominance $Cr$ and $Cb$ are
 
 \def\hqline{%
     YCrCbY$\overline{\mathrm{Cr}}\overline{\mathrm{Cb}}$%
-} 
+}
 
 \placetable[][none]{The Martin HQ parameters and scan-line timing.}{
 \bTABLE[offset=\dimexpr1mm+.5pt]\tfx
@@ -350,5 +350,16 @@ bars are sent.}
 {
     \externalfigure[sstv/obr/HQ2_bars-en.pdf][]
 }
+
+\subsection{Wraase W1 and W2}
+
+Volker Wraase DL2RZ in his later interface SC-4 {\em
+SSTV-PC-Scanconverter} brought two new modes: W1 and W2. These
+modes are special in using an RGB color model, but with a ratio
+of 2\,:\,2\,:\,1, so the blue color component has only half of
+the horizontal resolution. Which also helps to reduce the
+required transmission time, but it has less color distortion
+than previous SC2 modes, which are reducing both red and blue
+color components.
 
 % vim: tw=64
