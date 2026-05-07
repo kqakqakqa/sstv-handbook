@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Communication on Short Waves — SSTV Handbook</title>
+  <meta name="description" content="SSTV Handbook by Martin Bruchanov OK2MNM">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'SSTV Handbook',
+      repo: 'https://github.com/BruXy/sstv-handbook',
+      basePath: '/',
+      loadSidebar: '_sidebar.md',
+      loadNavbar: '_navbar.md',
+      subMaxLevel: 3,
+      auto2top: true,
+      search: 'auto',
+      // Sidebar always visible, even on mobile
+      mergeNavbar: true,
+      // chapter navigation plugin — adds prev/next links
+      plugins: [
+        function(hook, vm) {
+          hook.doneEach(function() {
+            addChapterNav();
+          });
+        }
+      ]
+    };
+
+    // Auto-generate prev/next chapter navigation
+    function addChapterNav() {
+      var content = document.querySelector('.content');
+      if (!content) return;
+      // Remove old nav if exists
+      var old = document.querySelector('.chapter-nav');
+      if (old) old.remove();
+
+      var path = window.location.hash.replace('#', '') || '/';
+      // Only show on chapter pages
+      var chapters = [
+        { title: 'Preface',             path: 'chapters/01_uvod.md' },
+        { title: 'Slow-scan Television', path: 'chapters/02_sstv_start.md' },
+        { title: 'Modern SSTV Features', path: 'chapters/03_modern_sstv.md' },
+        { title: 'Formats of SSTV',      path: 'chapters/05_bw_mode.md' },
+        { title: 'List of SSTV Modes',   path: 'chapters/09_list.md' },
+        { title: 'SSTV Equipment',       path: 'chapters/10_zarizeni.md' },
+        { title: 'Computer Operations',  path: 'chapters/11_konfig.md' },
+        { title: 'Ham Radio Image Ops',  path: 'chapters/13_provoz.md' },
+        { title: 'Intro to Digital SSTV', path: 'chapters/15_dsstv_uv.md' },
+        { title: 'DSSTV Trans. Systems', path: 'chapters/19_dsstv-transmission-systems.md' },
+        { title: 'Facsimile — Radiofax', path: 'chapters/25_fax.md' },
+        { title: 'Professional Fax Stations', path: 'chapters/29_stations.md' },
+        { title: 'Computer Image Proc.', path: 'chapters/31_pcgfx.md' },
+        { title: 'Test Charts',          path: 'chapters/32_testchart.md' }
+      ];
+
+      var idx = -1;
+      for (var i = 0; i < chapters.length; i++) {
+        if (path === chapters[i].path) { idx = i; break; }
+      }
+      if (idx === -1) return;
+
+      var nav = document.createElement('div');
+      nav.className = 'chapter-nav';
+      nav.style.cssText = 'display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:2px solid #ddd;flex-wrap:wrap;gap:0.5rem;';
+
+      var prevLink = '';
+      var nextLink = '';
+      if (idx > 0) {
+        var p = chapters[idx - 1];
+        prevLink = '<a href="#/' + p.path + '" style="color:#42b983;text-decoration:none;font-weight:500;">← ' + p.title + '</a>';
+      } else {
+        prevLink = '<span style="color:#999;">← Previous</span>';
+      }
+      if (idx < chapters.length - 1) {
+        var n = chapters[idx + 1];
+        nextLink = '<a href="#/' + n.path + '" style="color:#42b983;text-decoration:none;font-weight:500;">' + n.title + ' →</a>';
+      } else {
+        nextLink = '<span style="color:#999;">Next →</span>';
+      }
+      nav.innerHTML = '<div>' + prevLink + '</div><div>' + nextLink + '</div>';
+      content.appendChild(nav);
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+</body>
+</html>

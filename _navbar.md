@@ -1,0 +1,3 @@
+- [🏠 Home](/)
+- [📖 Full Book](/fullbook.md)
+- [GitHub](https://github.com/BruXy/sstv-handbook)

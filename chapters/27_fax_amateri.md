@@ -1,0 +1,44 @@
+## Hamradio facsimile operations
+
+The facsimile operation did not spread as SSTV in the past years. The
+reason for this is using of complex mechanical scanners and recorders
+and also a relatively long time of image transfer. A little
+development came with the computer software and cheap interfaces, but
+it is very rare to hear amateur fax on bands.
+
+The use of facsimile fits for very high resolution images, which
+is better than any SSTV mode. The number of lines for image is not
+given, but aspect ratio 4:3 should be used. Hamradio operators use
+IOC 576 or 288 and speed 120\,lpm or 240\,lpm, the usage of other
+modes depends on agreement of both parties. A report is given
+in common RST code (*Readibility, Strenght, Tone*).
+
+Figure 1: Hamradio facsimile from { ON7BW
+
+[Image: fax/obr/on7bw2.png]
+
+An opportunity to receive rare facsimile amateur stations is
+3^rd weekend in August, when *The International HF – FAX – Contest by DARC* is active. Those who are interested in this kind of
+communication mode may also try to obtain a diploma awarded by the
+DARC for two-way contacts.
+
+### EU – FAX – Diplom
+
+The diplom is award for two-way facsimile contacts with European
+countries. There are three degrees for QSO with 10 prefixes in 5
+countries, 20 prefixes in 10 countries and 40 prefixes in 20
+countries. European countries are given by WAE list. Valid QSOs are
+from 1/1/1980 and QSL cards must have note *2-WAY FAX*. A
+confirmed list of QSL cards and 5 send to: *DARC FAX Manager, Werner Ludwig DF5BX, Post Box 1270, D-49110 Georgmarienshutte, Germany*.
+
+### The International HF – FAX – Contest by DARC
+
+The contest is organized by the Deutscher Amateur Radio Club. Ongoing
+3^rd weekend of the August, starts at 8:00 UTC on Saturday and
+ends on Sunday at 20:00 UTC. It progress on all HF bands except the
+WARC. Assessed by two classes – listeners and one operator. All QSOs
+must be done in facsimile mode and image calls should include { CQ FAX TEST}. Report the RST and the number of connections from 001. Any
+QSO is a point valued, multipliers are countries WAE/DXCC and
+districts W, VE, and JA. QSO with a same station are valid on more
+bands. The log should be sent within 2 weeks after the contest to:
+*Werner Ludwig DF5BX, Post Box 1270, D-49110 Georgsmarienshuette, Germany*, email: `df5bx@darc.de`.
