@@ -10,7 +10,7 @@ resolution broadcast too.
 
 The synchronous mode was the first high-resolution mode. It was
 first implemented in the ViewPort VGA interface and software for
-IBM PCs in 1993. The old VGA cards with 256\,kB of memory can
+IBM PCs in 1993. The old VGA cards with 256\,KB of memory can
 hold an image with a resolution 640$\times$480 with only 16
 colors. This provides only grayscale images, so this mode is
 used for only B\&W transmission.
@@ -24,7 +24,7 @@ So the creator Ralph Taggart, WB8DQT called it FAX480, but
 compared with classic facsimile there are not many similarities.
 
 The synchronization of the FAX480 is derived from the reference
-frequency of 4.0 MHz, and a time unit is
+frequency of 4.0\,MHz, and a time unit is
 $4\,\rm{MHz}/2048=1953.125$\,Hz.
 
 Vertical sync is resolved as follows. In the first five seconds
@@ -38,7 +38,7 @@ see
 The tone 1500\,Hz is transmitted for 4 time units
 ($4\times[1/1953.125]=2.048$\,ms) and 2300\,Hz for 2.048\,ms
 too. This gives a frequency of an ATP tone also 244\,Hz
-($1/[2.048+2.048]=244$ Hz). This sequence is then repeated
+($1/[2.048+2.048]=244$\,Hz). This sequence is then repeated
 exactly 1,220$\times$. Originally the system did not use the VIS
 code, but  the code 85 was later added.
 
@@ -47,7 +47,7 @@ Originally, vertical sync is followed by a phasing interval of
 units), but this interval is omitted in some implementations.
 
 Now it's time to transfer the image itself. It is composed of 480 lines. Each
-line begins, unlike the facsimile, with 1200Hz sync with a length of 5.12\,ms 
+line begins, unlike the facsimile, with 1200\,Hz sync with a length of 5.12\,ms 
 and then continues a scan-line with 512 pixels. The  duration of the scan-line is 
 $512\times(1/1953.125)=262.144$\,ms.
 
@@ -76,9 +76,9 @@ Each mode has a default timing for scan-lines:
 \stopitemize
 
 The scan-line starts with a sync pulse of 20 time units, then
-there is a 5 unit black gap followed by the red component. It
-has 640 units, so there is one unit for each pixel. There are 5
-unit black gaps between color components and at the end of the
+there is a 5-unit black gap followed by the red component. It
+has 640 units, so there is one unit for each pixel. There are
+5-unit black gaps between color components and at the end of the
 scan-line before the sync of the next line. These gaps should
 help improve the detection of syncs.
 
@@ -89,7 +89,7 @@ correspond to that produced by the Martin M1 or Scottie S1
 modes. The upper 16 lines are used for gray scale and the
 remaining 480 for your the image itself.
 
-There are also two other modes with 480+16 lines. The P5 has a
+There are also two other modes with 480\,+\,16 lines. The P5 has a
 transfer time of almost 5 minutes with lower image quality and
 the P3 runs fastest at three minutes with a horizontal
 resolution about half of a P7.
@@ -120,7 +120,7 @@ TV.
 For speeding up the transmission, YCrCb color coding is used in
 the 4\,:\,2\,:\,0 format. If you divide the total time between
 two syncs by four, the result is the actual time for each color
-component. The scan-line begins with 20.0ms sync, then there is
+component. The scan-line begins with 20.0\,ms sync, then there is
 a 2,080\,ms gap of black, and the first luminance signal $Y_1$.
 It is followed  by chrominance signals $R-Y$ and $B-Y$ without
 any gap. Then there is a second luminance $Y_2$. The exact
@@ -157,8 +157,8 @@ fast PD-50, which provides a similar resolution as Scottie S2.
 
 %TIMING SEQUENCE
 %Note: two complete lines are shown.
-%(1) Sync pulse   	20.000   	1200hz
-%(2) Porch   	2.080ms   	1500hz
+%(1) Sync pulse   	20.000   	1200\,Hz
+%(2) Porch   	2.080\,ms   	1500\,Hz
 %(3) Y scan (from odd line)
 %(4) R-Y scan averaged for two lines
 %(5) B-Y averaged for two lines

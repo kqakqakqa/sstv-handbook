@@ -3,7 +3,7 @@
 In one afternoon, an equipped hamradio operator can begin receiving SSTV.
 All that is needed is to make a connection cable between a transceiver and a
 sound card and download some SSTV related software. Then tune into 14.230\,MHz
-USB for 24 hour-a-day SSTV activity.
+USB for 24-hour-a-day SSTV activity.
 
 Programs for SSTV operations are very similar and provide equivalent basic
 functions, of course with different comfort levels. Some of them are intuitive and
@@ -33,7 +33,7 @@ popular programs from the nineties run on DOS. In this case,
 graphics card with 256 colors are enough. But graphic cards with 32 or 64 thousand colors are more suitable.
 
 To use a sound card a good PC is needed. At the least it
-should be configured with 150MHz Pentium, 64\,MB
+should be configured with 150\,MHz Pentium, 64\,MB
 RAM and few gigabytes hard disk. A graphics card
 needs to support 1024$\times$768 resolution in 
 64 thousands or 16.7 million color mode. The minimal operating
@@ -103,7 +103,7 @@ signal in \in{fig.}[pic:spectrum].
 {\externalfigure[software/obr/spektrum.pdf]}
 
 For explicit signal reconstruction the condition $f_{s} > 2f_{max}$ must be
-satisfied, see fig.~\in[pic:sampleok]. If a sampling frequency is
+satisfied, see \in{fig.}[pic:sampleok]. If a sampling frequency is
 lower then $2f_{max}$ then  the higher frequency components are lost. This
 error is called {\em aliasing}.
 
@@ -139,7 +139,7 @@ influenced by quantization error. The size of the error can be
 decreased by greater resolution of A/D converter. For our purposes
 the 16bit resolution is acceptable.
 
-A modern sound cards could be equipped with digital signal processor (DSP),
+Modern sound cards could be equipped with digital signal processor (DSP),
 which extend card functions e.g. for filtering or data compression during
 recording so it can lighten load of main computer CPU. E.g. {\em Sound Blaster
 Live!} contains programmable DSP labeled {\em EMU10K1}.
@@ -157,7 +157,7 @@ can be used TRX output often labeled as {\ss AF OUT} with impedance about
 used for interfacing tape deck or audio amplifier. Microphone input of sound
 card has automatic gain controller (AGC) for better recording and it is
 possible connect dynamics microphones with impedance from 600 to
-10.000\,$\Omega$.
+10,000\,$\Omega$.
 
 \placefigure[][none]{Basic interface between transceiver and sound card.}
 {\externalfigure[software/obr/sound_card.pdf][width=0.6\makeupwidth]}
@@ -294,7 +294,7 @@ received in Europe/Asia region. Select CW mode and tune your receiver directly
 to one of station frequencies. The unmodulated carrier is transmitted between
 0. and 8. minute of an hour, telegraphy identification goes from 9. minute and
 then the timing signal will continue. Pulses in intervals 1/60 and 1\,Hz goes
-between 10. and 20. minute and 10Hz pulses goes between 20. and 30. minute.
+between 10. and 20. minute and 10\,Hz pulses goes between 20. and 30. minute.
 This is repeated every 30 minutes. 
 
 \placefigure[][none]{The configuration of accurate timing with {\ss RMW} reception
@@ -377,7 +377,7 @@ Thanks to typical SSTV sound and clattering of syncs it is not a problem to dist
 between SSTV and other communication modes.
 
 Every SSTV program is equipped with precise tuning indicators~-- spectroscopes,
-see fig.~\in[pic:tuning]. The spectroscope shows frequency band from 1000\,Hz
+see \in{fig.}[pic:tuning]. The spectroscope shows frequency band from 1000\,Hz
 to 2500\,Hz with marks for critical frequncies~-- 1200\,Hz for syncs, 1500\,Hz
 and 2300\,Hz for the video signal.
 

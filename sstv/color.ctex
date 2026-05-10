@@ -55,7 +55,7 @@ engineer Volker Wraase, DL2RZ. The system was most likely created by
 modifying existing equipment to operate in  8s
 mode or for frame-sequential transmission.
 
-Each scan-line begins with 6.0ms sync, then a green component
+Each scan-line begins with 6.0\,ms sync, then a green component
 follows and then the blue and red components. Separate sync
 of 6.0\,ms length precedes each color component.
 
@@ -69,8 +69,8 @@ noise level is too high, the received image contains few color
 bands as the converter loses and restores synchronization. For
 this reason, an additional sync pulse was added to subsequent
 productions of the SC-1 converter. It consists of a truncated
-5ms sync before the red line, which is immediately followed by a
-short pulse of 2300\,Hz frequency lasting 1-2 ms. It allows the
+5\,ms sync before the red line, which is immediately followed by a
+short pulse of 2300\,Hz frequency lasting 1~--2\,ms. It allows the
 converter to regain synchronization after the noise subsides.
 Additional synchronization occurs as a thin red stripe in the
 left edge of the image.
@@ -144,10 +144,10 @@ modes are compatible with their B\&W variants. So a 12s color
 mode can be displayed by 8s monitors, etc.
 
 From a total of 8 modes, 4 are intended for color transmission.
-Half of the color modes use YCrCb in a 4:2:0 format. The
+Half of the color modes use YCrCb in a 4\,:\,2\,:\,0 format. The
 scan-line contains only one chrominance signal, and colors are
 obtained from the average of two adjacent lines in the original
-image. The other two modes use the 4:2:2 format and send all
+image. The other two modes use the 4\,:\,2\,:\,2 format and send all
 color information in one scan-line.
 
 The original Robot system uses asynchronous transfer. To receive
@@ -162,14 +162,14 @@ bars are sent.}
 }
 
 The scan-line is composed of the starting sync, followed by a
-short 3.0ms gap of 1500\,Hz and then the image part with
+short 3.0\,ms gap of 1500\,Hz and then the image part with
 luminance and chrominance. The chrominance differential signals
-begin with additional sync pulses. The 1500Hz sync is before
-$R-Y$ and the second 2300Hz is before $B-Y$. Due to the
+begin with additional sync pulses. The 1500\,Hz sync is before
+$R-Y$ and the second 2300\,Hz is before $B-Y$. Due to the
 additional sync with a different sync frequency, it is possible
 to re-synchronize 4\,:\,2\,:\,0 formats after an interruption.
 The chrominance syncs are separated from the scan-line with
-1500Hz gap that lasts 1.5\,ms.
+1500\,Hz gap that lasts 1.5\,ms.
 
 \placefigure[][none]{The scan-line of Robot 72 Color when the color
 bars are sent.}
@@ -197,10 +197,10 @@ four images with 128$\times$120, and they are displayed in a
 
 The fastest mode of the Robot family and the fastest color SSTV
 mode is the 12s mode. It contains 120 lines transmitted in the
-4:2:0 format. Another mode is 24s with a 256$\times$120
-resolution and 4:2:2 color format. The other two modes allow
+4\,:\,2\,:\,0 format. Another mode is 24s with a 256$\times$120
+resolution and 4\,:\,2\,:\,2 color format. The other two modes allow
 the transfer of images in 256$\times$240 resolution, either in
-less quality for 36 seconds in a 4:2:0 format or in better
+less quality for 36 seconds in a 4\,:\,2\,:\,0 format or in better
 quality in 4\,:\,2\,:\,2 format for 72 seconds.
 
 \placefigure[][none]{Comparison of Robot color modes.}
@@ -256,10 +256,10 @@ minutes during their orbit.
 
 
 \bTABLEbody
-\bTR\bTD Robot 12 Color \eTD\bTD 12\,s\eTD\bTD  160$\times$120 \eTD\bTD  4\,:\,2\,\,:0 \eTD\bTD  Robot B\&W 8   \eTD\eTR
-\bTR\bTD Robot 24 Color \eTD\bTD 24\,s\eTD\bTD  320$\times$120 \eTD\bTD  4\,:\,2\,\,:2 \eTD\bTD  Robot B\&W 12   \eTD\eTR
-\bTR\bTD Robot 36 Color \eTD\bTD 36\,s\eTD\bTD  320$\times$240 \eTD\bTD  4\,:\,2\,\,:0 \eTD\bTD  Robot B\&W 24   \eTD\eTR
-\bTR\bTD Robot 72 Color \eTD\bTD 72\,s\eTD\bTD  320$\times$240 \eTD\bTD  4\,:\,2\,\,:2 \eTD\bTD  Robot B\&W 36   \eTD\eTR
+\bTR\bTD Robot 12 Color \eTD\bTD 12\,s\eTD\bTD  160$\times$120 \eTD\bTD  4\,:\,2\,:\,0 \eTD\bTD  Robot B\&W 8   \eTD\eTR
+\bTR\bTD Robot 24 Color \eTD\bTD 24\,s\eTD\bTD  320$\times$120 \eTD\bTD  4\,:\,2\,:\,2 \eTD\bTD  Robot B\&W 12   \eTD\eTR
+\bTR\bTD Robot 36 Color \eTD\bTD 36\,s\eTD\bTD  320$\times$240 \eTD\bTD  4\,:\,2\,:\,0 \eTD\bTD  Robot B\&W 24   \eTD\eTR
+\bTR\bTD Robot 72 Color \eTD\bTD 72\,s\eTD\bTD  320$\times$240 \eTD\bTD  4\,:\,2\,:\,2 \eTD\bTD  Robot B\&W 36   \eTD\eTR
 \eTABLEbody
 \eTABLE
 
@@ -349,7 +349,7 @@ of the Robot 1200C converter and it preserves the transmission
 of the header gradation scale.
 
 \placefigure[][none]{A comparison of systems in real conditions
-on the 3.7MHz band.}
+on the 3.7\,MHz band.}
 {
     \startcombination[2*1]
     {\externalfigure[sstv/obr/srobot.png][width=0.4\makeupwidth]}
@@ -378,10 +378,10 @@ lines. Modes Martin M1 and M2 are often used between European stations.
 \placetable[][none]{The Martin scan-line timing.}{
 \scantableheader{G}{B}{R}
 \bTABLEbody
-\bTR\bTD Martin M1  \eTD\bTD  114 s \eTD\bTD 320$\times$256\eTD\bTD  G--B--R \eTD\bTD  4.862\eTD\bTD  146.432 \eTD\bTD  146.432 \eTD\bTD  146.432 \eTD\bTD  134.3947532 \eTD\eTR
-\bTR\bTD Martin M2  \eTD\bTD  58 s \eTD\bTD 160$\times$256\eTD\bTD  G--B--R \eTD\bTD  4.862\eTD\bTD  73.216  \eTD\bTD  73.216  \eTD\bTD  73.216  \eTD\bTD  264.5525975 \eTD\eTR
-\bTR\bTD Martin M3  \eTD\bTD  57 s \eTD\bTD 320$\times$128\eTD\bTD  G--B--R \eTD\bTD  4.862\eTD\bTD  146.432 \eTD\bTD  146.432 \eTD\bTD  146.432 \eTD\bTD  134.3947532 \eTD\eTR
-\bTR\bTD Martin M4  \eTD\bTD  29 s \eTD\bTD 160$\times$128\eTD\bTD  G--B--R \eTD\bTD  4.862\eTD\bTD  73.216  \eTD\bTD  73.216  \eTD\bTD  73.216  \eTD\bTD  264.5525975 \eTD\eTR
+\bTR\bTD Martin M1  \eTD\bTD  114\,s \eTD\bTD 320$\times$256\eTD\bTD  G--B--R \eTD\bTD  4.862\eTD\bTD  146.432 \eTD\bTD  146.432 \eTD\bTD  146.432 \eTD\bTD  134.3947532 \eTD\eTR
+\bTR\bTD Martin M2  \eTD\bTD  58\,s \eTD\bTD 160$\times$256\eTD\bTD  G--B--R \eTD\bTD  4.862\eTD\bTD  73.216  \eTD\bTD  73.216  \eTD\bTD  73.216  \eTD\bTD  264.5525975 \eTD\eTR
+\bTR\bTD Martin M3  \eTD\bTD  57\,s \eTD\bTD 320$\times$128\eTD\bTD  G--B--R \eTD\bTD  4.862\eTD\bTD  146.432 \eTD\bTD  146.432 \eTD\bTD  146.432 \eTD\bTD  134.3947532 \eTD\eTR
+\bTR\bTD Martin M4  \eTD\bTD  29\,s \eTD\bTD 160$\times$128\eTD\bTD  G--B--R \eTD\bTD  4.862\eTD\bTD  73.216  \eTD\bTD  73.216  \eTD\bTD  73.216  \eTD\bTD  264.5525975 \eTD\eTR
 \eTABLEbody
 \eTABLE
 }
@@ -396,7 +396,7 @@ Scottie has the same improvements as the Martin system does, but
 its scan-line composition and scan timing are different.
 
 After vertical synchronization, the sequence of scan-lines is; a
-1.5ms short gap of 1500\,Hz, then a green component, a 1.5ms
+1.5\,ms short gap of 1500\,Hz, then a green component, a 1.5\,ms
 short gap again, a blue component, then horizontal sync,
 another gap and lastly, a red component. This unusual order is
 the result of the system adaptation to SC-1, where the
@@ -411,7 +411,7 @@ modes are implemented for free-run reception, so the system is
 equivalent to the Martin.
 
 The implementation of Scottie in Robot 1200C slightly differs
-because the first scan-line includes an additional 9.0ms sync at
+because the first scan-line includes an additional 9.0\,ms sync at
 the beginning of the scan-line right after vertical
 synchronization. All other modes implemented in Robot 1200C have
 sync at the beginning of the scan-line but the Scottie has the
@@ -462,11 +462,11 @@ enough for the transfer of a whole picture.
 \placetable[][none]{The Scottie scan-line timing.}{
 \scantableheader{G}{B}{R}
 \bTABLEbody
-\bTR\bTD Scottie S1 \eTD\bTD   110 s \eTD\bTD 320$\times$256\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD  138.240  \eTD\bTD  138.240  \eTD\bTD  138.240  \eTD\bTD  140.1148942  \eTD\eTR
-\bTR\bTD Scottie S2 \eTD\bTD   71 s \eTD\bTD 160$\times$256\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD   88.064  \eTD\bTD   88.064  \eTD\bTD  88.064   \eTD\bTD  216.0667214  \eTD\eTR
-\bTR\bTD Scottie S3 \eTD\bTD   55 s \eTD\bTD 320$\times$128\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD  138.240  \eTD\bTD  138.240  \eTD\bTD  138.240  \eTD\bTD  140.1148942  \eTD\eTR
-\bTR\bTD Scottie S4 \eTD\bTD   36 s \eTD\bTD 160$\times$128\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD  88.064   \eTD\bTD  88.064   \eTD\bTD  88.064   \eTD\bTD  216.0667214  \eTD\eTR
-\bTR\bTD Scottie DX \eTD\bTD   269 s \eTD\bTD 320$\times$256\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD  345.600  \eTD\bTD  345.600 \eTD\bTD  345.600  \eTD\bTD   57.12653528 \eTD\eTR
+\bTR\bTD Scottie S1 \eTD\bTD   110\,s \eTD\bTD 320$\times$256\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD  138.240  \eTD\bTD  138.240  \eTD\bTD  138.240  \eTD\bTD  140.1148942  \eTD\eTR
+\bTR\bTD Scottie S2 \eTD\bTD   71\,s \eTD\bTD 160$\times$256\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD   88.064  \eTD\bTD   88.064  \eTD\bTD  88.064   \eTD\bTD  216.0667214  \eTD\eTR
+\bTR\bTD Scottie S3 \eTD\bTD   55\,s \eTD\bTD 320$\times$128\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD  138.240  \eTD\bTD  138.240  \eTD\bTD  138.240  \eTD\bTD  140.1148942  \eTD\eTR
+\bTR\bTD Scottie S4 \eTD\bTD   36\,s \eTD\bTD 160$\times$128\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD  88.064   \eTD\bTD  88.064   \eTD\bTD  88.064   \eTD\bTD  216.0667214  \eTD\eTR
+\bTR\bTD Scottie DX \eTD\bTD   269\,s \eTD\bTD 320$\times$256\eTD\bTD  G--B--R \eTD\bTD  9.0\eTD\bTD  345.600  \eTD\bTD  345.600 \eTD\bTD  345.600  \eTD\bTD   57.12653528 \eTD\eTR
 \eTABLEbody
 \eTABLE
 }
@@ -514,7 +514,7 @@ in analog television.
 The fastest mode is the AVT\,24 with 120 lines and it is
 transferred for 31 seconds. The next mode is AVT\,90 with a
 resolution of 256$\times$240 and an image quality slightly worse
-than in the Martin M1. ATV\,90 sends each color component in
+than in the Martin M1. AVT\,90 sends each color component in
 125.0\,ms, thus the speed is 2048 pixels per second (in binary
 notation this gives a nice rounded number). The other two modes
 have somewhat atypical resolutions in comparison with other SSTV
@@ -536,7 +536,7 @@ After a series of VIS code, there is a digital header (see
 is a sequence of 32 frames of 16 bits. Each frame contains only
 8 bits of information, but it is sent twice~-- first in normal
 form and second inverted. Normal and inverted parts can be
-compared for error detection. Each frame starts with a 1900Hz
+compared for error detection. Each frame starts with a 1900\,Hz
 pulse while data modulation uses 1600\,Hz for the representation
 of logical zeros and 2200\,Hz for logical ones. Narrow-band
 variants use 1700\,Hz for zeros and 2100\,Hz for ones. Both
@@ -549,7 +549,7 @@ of AVT\,90 mode (VIS 68, normal variant).}
     \externalfigure[sstv/obr/AVT90_synchro-en.pdf]
 }
 
-The first three bit of each 8bit word identifies the mode:
+The first three bit of each 8-bit word identifies the mode:
 
 \startitemize
 \item 010 -- AVT\,24,
@@ -596,7 +596,7 @@ performance. The first is the narrow-band transmission which
 uses a 400\,Hz band from 1700\,Hz (black) to 2100\,Hz (white).
 With an appropriate filter, the resistance to interference can
 be improved with minimal loss of image quality. For instance;
-the 400 Hz wide CW filter can be used with a variable IF shift.
+the 400\,Hz wide CW filter can be used with a variable IF shift.
 
 The second option is the \uv{QRM mode}, where an entire image is
 sent interlaced. Within the first half of image transmission
@@ -613,7 +613,7 @@ horizontally independently of the first field. This allows you
 to compensate if there is a significant multi-path delay in
 regard to the two fields.
 
-In ATV implementations, the system can work well without these
+In AVT implementations, the system can work well without these
 interactive tools. But in practice, especially on shortwaves
 where conditions change quickly; the second field could be
 phase-shifted and this causes the notable \uv{toothy} edge of
@@ -676,13 +676,13 @@ uses the RGB format 2\,:\,4\,:\,2. The remaining two modes,
 SC-2\,30 with 128 and SC-2\,60 with 256 lines have about half of
 the resolution found in SC-2\,120.
 
-\placetable[][none]{Wraase SC-2 scan-line timing.}{
+\placetable[][none]{The Wraase SC-2 scan-line timing.}{
 \scantableheader{R}{G}{B}
 \bTABLEbody
-\bTR\bTD Wraase SC-2 30 \eTD\bTD  30  \eTD\bTD 256$\times$128\eTD\bTD  R--G--B \eTD\bTD  5.0\eTD\bTD  58.0  \eTD\bTD  117.0 \eTD\bTD  58.0  \eTD\bTD  249.600 \eTD\eTR
-\bTR\bTD Wraase SC-2 60 \eTD\bTD  60  \eTD\bTD 256$\times$256\eTD\bTD  R--G--B \eTD\bTD  5.0\eTD\bTD  58.0  \eTD\bTD  117.0 \eTD\bTD 58.0  \eTD\bTD  249.600 \eTD\eTR
-\bTR\bTD Wraase SC-2 120\eTD\bTD  120 \eTD\bTD 320$\times$256\eTD\bTD  R--G--B \eTD\bTD  5.0\eTD\bTD  117.0 \eTD\bTD  235.0 \eTD\bTD  117.0 \eTD\bTD  126.175 \eTD\eTR
-\bTR\bTD Wraase SC-2 180\eTD\bTD  180 \eTD\bTD 512$\times$256\eTD\bTD  R--G--B \eTD\bTD  5.0\eTD\bTD  235.0 \eTD\bTD  235.0 \eTD\bTD  235.0 \eTD\bTD  84.383 \eTD\eTR
+\bTR\bTD Wraase SC-2 30 \eTD\bTD  30\,s   \eTD\bTD 256$\times$128\eTD\bTD  R--G--B \eTD\bTD  5.0\eTD\bTD  58.0  \eTD\bTD  117.0 \eTD\bTD  58.0  \eTD\bTD  249.600 \eTD\eTR
+\bTR\bTD Wraase SC-2 60 \eTD\bTD  60\,s   \eTD\bTD 256$\times$256\eTD\bTD  R--G--B \eTD\bTD  5.0\eTD\bTD  58.0  \eTD\bTD  117.0 \eTD\bTD 58.0  \eTD\bTD  249.600 \eTD\eTR
+\bTR\bTD Wraase SC-2 120\eTD\bTD  120\,s  \eTD\bTD 320$\times$256\eTD\bTD  R--G--B \eTD\bTD  5.0\eTD\bTD  117.0 \eTD\bTD  235.0 \eTD\bTD  117.0 \eTD\bTD  126.175 \eTD\eTR
+\bTR\bTD Wraase SC-2 180\eTD\bTD  180\,s  \eTD\bTD 512$\times$256\eTD\bTD  R--G--B \eTD\bTD  5.0\eTD\bTD  235.0 \eTD\bTD  235.0 \eTD\bTD  235.0 \eTD\bTD  84.383 \eTD\eTR
 \eTABLEbody
 \eTABLE
 }

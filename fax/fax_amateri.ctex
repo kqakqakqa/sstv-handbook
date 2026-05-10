@@ -8,13 +8,13 @@ it is very rare to hear amateur fax on bands.
 
 The use of facsimile fits for very high resolution images, which
 is better than any SSTV mode. The number of lines for image is not
-given, but aspect ratio 4:3 should be used. Hamradio operators use
+given, but aspect ratio 4\,:\,3 should be used. Hamradio operators use
 IOC 576 or 288 and speed 120\,lpm or 240\,lpm, the usage of other
 modes depends on agreement of both parties. A report is given
 in common RST code ({\em Readibility, Strenght, Tone}\/).
 
 \placefigure[][none]{Hamradio facsimile from {\ss ON7BW} received
-on 14MHz band, speed 240\,lpm, IOC 288.}
+on 14\,MHz band, speed 240\,lpm, IOC 288.}
 {
 	\externalfigure[fax/obr/on7bw2.png][width=\makeupwidth]
 }

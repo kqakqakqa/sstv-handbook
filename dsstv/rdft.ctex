@@ -17,13 +17,13 @@ logical zero or one. This is used for example for teletype mode PSK31.
 %http://replay.web.archive.org/20090410002431/http://www.svs.net/wyman/examples/hdsstv/0f.htm
 
 RDFT uses similar principle but much more extended. The signal is composed from
-eight subcarriers from 590\,Hz to 2200\,Hz with 230Hz steps. Each subcarrier
+eight subcarriers from 590\,Hz to 2200\,Hz with 230\,Hz steps. Each subcarrier
 uses nine modulation states~-- eight informational states and one state with
 {\em no change} meaning. The data from inner encoder are used for phase
 assignment. 
 
 The first step in modulation process is to take a cosine of modulation angle
-plus 1400Hz subcarrier angle. In next steps the energy around 1400 Hz is
+plus 1400\,Hz subcarrier angle. In next steps the energy around 1400 Hz is
 isolated  and translated onto right subcarrier. Then the subcarriers are
 compiled together and resulting spectrum of signal is in
 \in{fig.}[fig:wyman_spectrum].

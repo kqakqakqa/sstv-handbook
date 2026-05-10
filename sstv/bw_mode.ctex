@@ -43,7 +43,7 @@ Historically common modes are the 16-second mode with 128 lines,
 the 32-second mode with 256 lines and the 64-second mode with
 256 lines; which provides maximal image quality. All these modes
 are related to the original 8s mode and also have an image
-aspect ratio of 1:1. The number of lines, columns or both were
+aspect ratio of 1\,:\,1. The number of lines, columns or both were
 simply multiplied twice. This design was used in Wraase's B\&W
 converters.
 
@@ -54,7 +54,7 @@ parameters but  are derived from line speed. While the American
 60\,Hz/8s standard has a transfer speed of 900.0\,lpm, Robot's
 line speeds for new modes were set at 600.0\,lpm so that 120
 lines were transferred in 12s and 240 lines in 24s. The mode
-with the best resolution has a line speed of 400,0\,lpm and a
+with the best resolution has a line speed of 400.0\,lpm and a
 total transmission time of 36 seconds.
 
 The Robot SSTV system reserves the first 16 or 8 lines (for a
@@ -96,20 +96,20 @@ as devices for image transmission over telephone lines.
 \eTR
 \eTABLEhead
 \bTABLEbody
-\bTR\bTD 7.2s (50 Hz)      \eTD\bTD 120$\times$120 \eTD\bTD 1:1 \eTD\bTD 5.0  \eTD\bTD 55.0  \eTD\bTD 1000.0  \eTD\eTR
-\bTR\bTD 8s (60 Hz)          \eTD\bTD 120$\times$120 \eTD\bTD 1:1 \eTD\bTD 5.0  \eTD\bTD 60.0  \eTD\bTD  900.0  \eTD\eTR
-\bTR\bTD Wraase SC-1 8       \eTD\bTD 128$\times$128 \eTD\bTD 1:1 \eTD\bTD 5.0  \eTD\bTD 55.0  \eTD\bTD 1000.0  \eTD\eTR
-\bTR\bTD Wraase SC-1 16      \eTD\bTD 256$\times$128 \eTD\bTD 1:1 \eTD\bTD 5.0  \eTD\bTD 115.0 \eTD\bTD  500.0  \eTD\eTR
-\bTR\bTD Wraase SC-1 16 Q    \eTD\bTD 128$\times$256 \eTD\bTD 1:1 \eTD\bTD 5.0  \eTD\bTD 55.0  \eTD\bTD 1000.0  \eTD\eTR
-\bTR\bTD Wraase SC-1 32      \eTD\bTD 256$\times$256 \eTD\bTD 1:1 \eTD\bTD 5.0  \eTD\bTD 115.0 \eTD\bTD  500.0  \eTD\eTR
-\bTR\bTD 64\,s~mode            \eTD\bTD 256$\times$256 \eTD\bTD 1:1 \eTD\bTD 5.0  \eTD\bTD 115.0 \eTD\bTD  250.0  \eTD\eTR
-\bTR\bTD Robot B\&W 8        \eTD\bTD 160$\times$120 \eTD\bTD 4:3 \eTD\bTD 10.0 \eTD\bTD 56.0  \eTD\bTD  900.0  \eTD\eTR
-\bTR\bTD Robot B\&W 12       \eTD\bTD 160$\times$120 \eTD\bTD 4:3 \eTD\bTD  7.0 \eTD\bTD 93.0  \eTD\bTD  600.0  \eTD\eTR
-\bTR\bTD Robot B\&W 24       \eTD\bTD 320$\times$240 \eTD\bTD 4:3 \eTD\bTD 12.0 \eTD\bTD 93.0  \eTD\bTD  600.0  \eTD\eTR
-\bTR\bTD Robot B\&W 36       \eTD\bTD 320$\times$240 \eTD\bTD 4:3 \eTD\bTD 12.0 \eTD\bTD 138.0 \eTD\bTD  400.0  \eTD\eTR
-\bTR\bTD AVT  125            \eTD\bTD 320$\times$400 \eTD\bTD 4:3 \eTD\bTD[aligncharacter=no] ---      \eTD\bTD 312.5 \eTD\bTD 192.000 \eTD\eTR
-\bTR\bTD FAX 480             \eTD\bTD 512$\times$480 \eTD\bTD 1:1 \eTD\bTD 5.12 \eTD\bTD262.144\eTD\bTD 224.497  \eTD\eTR
-\bTR\bTD SP-17 BW            \eTD\bTD 128$\times$256 \eTD\bTD 4:3 \eTD\bTD 5.0  \eTD\bTD 62.0   \eTD\bTD  895.520 \eTD\eTR
+\bTR\bTD 7.2s (50 Hz)      \eTD\bTD 120$\times$120 \eTD\bTD 1\,:\,1 \eTD\bTD 5.0  \eTD\bTD 55.0  \eTD\bTD 1000.0  \eTD\eTR
+\bTR\bTD 8s (60 Hz)          \eTD\bTD 120$\times$120 \eTD\bTD 1\,:\,1 \eTD\bTD 5.0  \eTD\bTD 60.0  \eTD\bTD  900.0  \eTD\eTR
+\bTR\bTD Wraase SC-1 8       \eTD\bTD 128$\times$128 \eTD\bTD 1\,:\,1 \eTD\bTD 5.0  \eTD\bTD 55.0  \eTD\bTD 1000.0  \eTD\eTR
+\bTR\bTD Wraase SC-1 16      \eTD\bTD 256$\times$128 \eTD\bTD 1\,:\,1 \eTD\bTD 5.0  \eTD\bTD 115.0 \eTD\bTD  500.0  \eTD\eTR
+\bTR\bTD Wraase SC-1 16 Q    \eTD\bTD 128$\times$256 \eTD\bTD 1\,:\,1 \eTD\bTD 5.0  \eTD\bTD 55.0  \eTD\bTD 1000.0  \eTD\eTR
+\bTR\bTD Wraase SC-1 32      \eTD\bTD 256$\times$256 \eTD\bTD 1\,:\,1 \eTD\bTD 5.0  \eTD\bTD 115.0 \eTD\bTD  500.0  \eTD\eTR
+\bTR\bTD 64\,s~mode            \eTD\bTD 256$\times$256 \eTD\bTD 1\,:\,1 \eTD\bTD 5.0  \eTD\bTD 115.0 \eTD\bTD  250.0  \eTD\eTR
+\bTR\bTD Robot B\&W 8        \eTD\bTD 160$\times$120 \eTD\bTD 4\,:\,3 \eTD\bTD 10.0 \eTD\bTD 56.0  \eTD\bTD  900.0  \eTD\eTR
+\bTR\bTD Robot B\&W 12       \eTD\bTD 160$\times$120 \eTD\bTD 4\,:\,3 \eTD\bTD  7.0 \eTD\bTD 93.0  \eTD\bTD  600.0  \eTD\eTR
+\bTR\bTD Robot B\&W 24       \eTD\bTD 320$\times$240 \eTD\bTD 4\,:\,3 \eTD\bTD 12.0 \eTD\bTD 93.0  \eTD\bTD  600.0  \eTD\eTR
+\bTR\bTD Robot B\&W 36       \eTD\bTD 320$\times$240 \eTD\bTD 4\,:\,3 \eTD\bTD 12.0 \eTD\bTD 138.0 \eTD\bTD  400.0  \eTD\eTR
+\bTR\bTD AVT  125            \eTD\bTD 320$\times$400 \eTD\bTD 4\,:\,3 \eTD\bTD[aligncharacter=no] ---      \eTD\bTD 312.5 \eTD\bTD 192.000 \eTD\eTR
+\bTR\bTD FAX 480             \eTD\bTD 512$\times$480 \eTD\bTD 1\,:\,1 \eTD\bTD 5.12 \eTD\bTD262.144\eTD\bTD 224.497  \eTD\eTR
+\bTR\bTD SP-17 BW            \eTD\bTD 128$\times$256 \eTD\bTD 4\,:\,3 \eTD\bTD 5.0  \eTD\bTD 62.0   \eTD\bTD  895.520 \eTD\eTR
 
  % line 0,001500 backporch +    0,060500 video
 

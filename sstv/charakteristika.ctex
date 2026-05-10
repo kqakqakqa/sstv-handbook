@@ -118,7 +118,7 @@ components are re-composed into a colour image.
 If it is possible to detect about 64 frequency levels in the
 800\,Hz video channel, then each colour component contains 64
 brightness levels. And the resulting colour image then contains
-$64\times 64\times 64=256144$ colours. If a demodulator can
+$64\times 64\times 64=262144$ colours. If a demodulator can
 distinguish 256 levels, it is possible to transfer over 16
 millions $=256^3$ colours. Colour SSTV transmission can meet the
 most demanding requirements of colour depth.
@@ -188,7 +188,7 @@ used. Also, precise transceiver tuning is needed, otherwise the
 colour information will be distorted. This is the reason why the
 YCrCb encoding is used less frequently. According to the
 positive or negative deviation from the carrier, the image is
-strongly hued to pink or green, see \in{figure}[pic:yuv_error].
+strongly hued to magenta or green, see \in{figure}[pic:yuv_error].
 
 \placefigure[][pic:yuv_error]{Color distortion of YCrCb when the station is improperly tuned.}{
     \externalfigure[sstv/obr/yuv_error.pdf]
@@ -275,7 +275,7 @@ significant bit.
 
 {\em Parity} is used for simple error checking. SSTV use even
 parity. This means, that the number of logical ones must be even
-in the whole 8bit code. If the number of ones in 7 bits is odd,
+in the whole 8-bit code. If the number of ones in 7 bits is odd,
 then the parity bit is set to one. If the number is even, the
 parity bit is zero. Since the information part of code has 7
 bits, it takes 128 values.
@@ -285,7 +285,7 @@ The frequency 1300\,Hz means the state of logical zero and
 1100\,Hz logical one. The first half of code (least significant
 bits, LSB) specifies the type of mode (BW/colour, resolution).
 The second half (most significant bits, MSB) contains
-information about the system (Robot, Martin, AVT,\ldots). The
+information about the system (Robot, Martin, AVT, \ldots). The
 last bit is reserved for parity error checking.
 
 \placetable[][tab:vis_system]{The meaning of bits in VIS code.}{

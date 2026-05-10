@@ -127,7 +127,7 @@ cameras with a sensor element like vidicon, plumbicon or other camera
 tubes.
 
 In SSTV cameras, the vertical scan frequency was adjusted from 50\,Hz to 16.6\,Hz (i.e.
-horizontal scanning frequency for 7.2s SSTV or 15\,Hz for 60Hz standard). Then
+horizontal scanning frequency for 7.2s SSTV or 15\,Hz for 60\,Hz standard). Then
 a whole camera or just a deflection unit only was rotated 90$^{\circ}$. The TV camera
 scans the image line by line, providing the sampling circuit with input. The sampling
 circuits reads short samples from each line during each camera scanning beam cycle.
@@ -226,7 +226,7 @@ Main features of SUPERSCAN 2001:
        \stopitemize
 \item Radio fax reception:
      \startitemize
-      \item 60, 90, 120, 240 lpm.
+      \item 60, 90, 120, 240\,lpm.
      \stopitemize
  \stopitemize
 \item Contains four memory banks and stores images in a resolution 256$\times$240 with 18bit color depth (262,144 colors).

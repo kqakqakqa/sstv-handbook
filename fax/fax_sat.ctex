@@ -96,7 +96,7 @@ If you are interested in reception of satellite imagery, there is few basic
 informations.
 
 For amateur reception it is possible to use NOAA satellites on low Earth orbit.
-These satellites transmit in 137MHz band in WEFAX mode with amplitude
+These satellites transmit in 137\,MHz band in WEFAX mode with amplitude
 modulation, so an sound card can be used as signal decoder with some dedicated
 software like JVComm32 or WXtoIMG. For the best reception should be used a
 receiver with 30 kHz intermediate frequency (IF) width, which unfortunately

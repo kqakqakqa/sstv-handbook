@@ -42,7 +42,7 @@ classic SSTV. You need better computer, at least 1GHz CPU and 256\,MB RAM. In
 your ham-shack you can use without any problems an oldish computer (e.g.
 Pentium 150\,MHz) for digital modes like RTTY or PSK, packet radio and analog
 SSTV, but algorithms of signal processing for DSSTV is so complex that a slow
-150MHz Pentium would not be able to process signals in real-time.
+150\,MHz Pentium would not be able to process signals in real-time.
 
 Also, there are increased requirements on the transceiver used. Used modulation
 techniques use the maximal width of the communication channel and SSB

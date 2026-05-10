@@ -73,7 +73,7 @@ of the success of MMSSTV. The author created modes with both standard and
 high resolutions. They use YCrCb colors and extended VIS code. Some
 modes use a narrower band for syncs and video signals.
 
-\placefigure[][none]{The comparison of modes in real conditions on the 3.7MHz band.}
+\placefigure[][none]{The comparison of modes in real conditions on the 3.7\,MHz band.}
 {
     \startcombination[2*1]
     {\externalfigure[sstv/obr/test_m1.jpg][width=0.4\makeupwidth]}{Martin M1}
@@ -94,7 +94,7 @@ While the remaining bits (MSB) distinguish a particular mode. Odd parity is used
 
 VIS used in narrowband modes has very little in common with the
 original standard. Initially, during vertical synchronization {\em
-N-VIS\/} pulses of 1900Hz and 2300Hz in 100\,ms are sent, followed by
+N-VIS\/} pulses of 1900\,Hz and 2300\,Hz in 100\,ms are sent, followed by
 a start bit of 1900\,Hz (see \in{fig.}[fig:mp110-n-en]).
 
 All code bits have a duration of 22\,ms (modulation speed is 45.45\,Bd). Logic one has
@@ -138,7 +138,7 @@ The MR and ML modes use YCrCb color coding in 4\,:\,2\,:\,2
 format, same as the Robot 72 Color mode. Horizontal syncs are
 the same as in MP modes. The scan-line begins with luminance
 $Y$, then 0.1\,ms gap is sent followed by $R-Y$, a gap, and
-$B-Y$, the line then ends with a 0.1ms gap. These gaps should
+$B-Y$, the line then ends with a 0.1\,ms gap. These gaps should
 have the same frequency as the last pixel of the previous color
 component. The MLxx group has a high resolution of
 640$\times$496.
@@ -267,7 +267,7 @@ distortion when signals are not tuned precisely. The HQ1 mode
 has 90 seconds for image transmission and HQ2 has 112 seconds,
 both use 256 vertical lines.
 
-I had once QSO on 20m with the station equipped also with the
+I had once QSO on 20\,m with the station equipped also with the
 Superscan 2001 scan-converter and we were able to exchange a few
 pictures in HQ1 mode and the quality was outstanding.
 
@@ -292,7 +292,7 @@ Scan line is started by two sync pulses with a gap: 6.5\,ms
 1200\,Hz, then 4.75\,ms 2100\,Hz, then 6.5\,ms 1200\,Hz, then
 4\,ms 1800 Hz (total of 21.75 ms).
 
-Then the video signals are sent in 4:2:2. For HQ1, luminance
+Then the video signals are sent in 4\,:\,2\,:\,2. For HQ1, luminance
 $Y$ is sent for 170\,ms, followed by chrominance $Cr$ for
 85.75\,ms and $Cb$ for 85.75\,ms. This is followed by a gap of
 0.5\,ms 1500\,Hz, then the information of the second screen line

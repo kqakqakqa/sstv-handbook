@@ -62,7 +62,7 @@ standard transceiver. However, a television broadcast requires a
 large bandwidth. The reduction of the television signal is
 achieved by lowering of horizontal (row) and vertical (image)
 scans, which must be reduced to a minimal frequency. This means
-that a typical 3MHz signal of black and white television must be
+that a typical 3\,MHz signal of black and white television must be
 reduced to 3\,kHz~-- the reduction of bandwidth is around
 1000\,:\,1. Nowadays the bandwidth reduction is bigger because
 the color image needs approx. 6\,MHz. Therefore, only static
