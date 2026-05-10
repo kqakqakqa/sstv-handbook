@@ -1,3 +1,2 @@
-- [🏠 Home](/)
-- [📖 Full Book](/fullbook.md)
-- [GitHub](https://github.com/BruXy/sstv-handbook)
+- [Home](/)
+- [GitHub](https://github.com/kqakqakqa/sstv-handbook/tree/docsify)
