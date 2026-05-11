@@ -2,4 +2,4 @@
 
 ## Contents
 
-[](_sidebar.md ":include")
+[](sidebar.md ":include")
